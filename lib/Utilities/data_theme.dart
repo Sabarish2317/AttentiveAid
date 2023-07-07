@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData appTheme = ThemeData(
   scaffoldBackgroundColor: tdBgColor,
-  textTheme: TextTheme(
+  /*Text themes*/ textTheme: TextTheme(
     titleLarge: TextStyle(
         fontSize: 12.sp,
         fontFamily: 'inter',
@@ -15,7 +15,7 @@ ThemeData appTheme = ThemeData(
       color: tdTxtBlk,
       fontSize: 24.sp,
       fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w500,
     ),
     titleSmall: TextStyle(
       color: const Color(0xFF7D13BE),

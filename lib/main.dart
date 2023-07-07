@@ -1,3 +1,4 @@
+import 'package:attentive_aid/Screens/dashboard_home.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/login_screen.dart';
@@ -16,14 +17,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AttentiveAid',
-      home: LoginPage(),
-      /*initialRoute: '/',
+      home: const LoginPage(),
+      initialRoute: '/',
       routes: {
         '/login': (context) => const LoginPage(),
-      },*/
+        '/home': (context) => const DashboardHome(),
+      },
     );
   }
 }

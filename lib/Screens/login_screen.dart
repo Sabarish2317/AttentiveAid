@@ -1,9 +1,9 @@
 import 'package:attentive_aid/Utilities/icons.dart';
-import 'package:attentive_aid/Utilities/text_theme.dart';
+import 'package:attentive_aid/Utilities/data_theme.dart';
 import 'package:attentive_aid/Widgets/global_widgets/app_logo_txt.dart';
 import 'package:attentive_aid/Widgets/global_widgets/sized_box.dart';
-import 'package:attentive_aid/Widgets/login_button.dart';
-import 'package:attentive_aid/Widgets/text_field_main.dart';
+import 'package:attentive_aid/Widgets/sign_in_widgets/login_button.dart';
+import 'package:attentive_aid/Widgets/sign_in_widgets/text_field_main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -33,67 +33,72 @@ class _LoginPageState extends State<LoginPage> {
     return ScreenUtilInit(
       designSize: const Size(393, 852),
       builder: (context, child) => MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: appTheme,
-          home: Scaffold(
-              resizeToAvoidBottomInset: true,
-              body: SingleChildScrollView(
-                  child: SafeArea(
-                      child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 36),
-                          /*main clm*/ child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Addheight(
-                                    height: keyboardHeight > 50 ? 50 : 130.h),
-                                Image.asset(
-                                  fingerIcon,
-                                  height: 72.75.h,
-                                  width: 75.w,
-                                ),
-                                //condition ? expressionOne : expressionTwo;
-                                Addheight(height: 12.25.h),
-                                const Center(child: MyAppLogo(size: 24)),
-                                Addheight(height: 73.h),
-                                Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-                                    "Email",
-                                    style: appTheme.textTheme.displayMedium,
-                                  ),
-                                ),
-                                Addheight(height: 12.h),
-                                TextFieldInput(
-                                    textEditingController: _emailController,
-                                    labelText: 'Email ID',
-                                    isPassword: false,
-                                    preffixIcon: userProfile),
-                                Addheight(height: 12.h),
-                                Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Text('Password',
-                                      style: appTheme.textTheme.displayMedium),
-                                ),
-                                Addheight(height: 12.h),
-                                TextFieldInput(
-                                  textEditingController: _passwordController,
-                                  labelText: 'Password',
-                                  preffixIcon: passwordLock,
-                                  isPassword: true,
-                                  suffixIcon: eyeLock,
-                                  suffixIconOn: eyeLockOn,
-                                ),
-                                Addheight(height: 10.h),
-                                const Align(
-                                    alignment: Alignment.center,
-                                    child: MyCheckBox(throwShotAway: true)),
-                                Addheight(height: 35.h),
-                                const LoginButton(),
-                                Addheight(height: 193.h),
-                                Text('Designed for SNSCT',
-                                    style: appTheme.textTheme.displayMedium)
-                              ])))))),
+        debugShowCheckedModeBanner: false,
+        theme: appTheme,
+        home: Scaffold(
+          resizeToAvoidBottomInset: true,
+          body: SingleChildScrollView(
+            child: SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 36),
+                /*main clm*/ child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Addheight(height: keyboardHeight > 50 ? 50 : 130.h),
+                    Image.asset(
+                      fingerIcon,
+                      height: 72.75.h,
+                      width: 75.w,
+                    ),
+                    //condition ? expressionOne : expressionTwo;
+                    Addheight(height: 12.25.h),
+                    const Center(child: MyAppLogo(size: 24)),
+                    Addheight(height: 73.h),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text(
+                        "Email",
+                        style: appTheme.textTheme.displayMedium,
+                      ),
+                    ),
+                    Addheight(height: 12.h),
+                    TextFieldInput(
+                        textEditingController: _emailController,
+                        labelText: 'Email ID',
+                        isPassword: false,
+                        preffixIcon: userProfile),
+                    Addheight(height: 12.h),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Text('Password',
+                          style: appTheme.textTheme.displayMedium),
+                    ),
+                    Addheight(height: 12.h),
+                    TextFieldInput(
+                      textEditingController: _passwordController,
+                      labelText: 'Password',
+                      preffixIcon: passwordLock,
+                      isPassword: true,
+                      suffixIcon: eyeLock,
+                      suffixIconOn: eyeLockOn,
+                    ),
+                    Addheight(height: 10.h),
+                    const Align(
+                        alignment: Alignment.center,
+                        child: MyCheckBox(throwShotAway: true)),
+                    Addheight(height: 35.h),
+                    const LoginButton(),
+                    Addheight(height: 193.h),
+                    Text('Designed for SNSCT',
+                        style: appTheme.textTheme.displayMedium)
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
