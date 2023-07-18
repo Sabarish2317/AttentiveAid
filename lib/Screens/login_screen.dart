@@ -1,7 +1,8 @@
-import 'package:attentive_aid/Utilities/icons.dart';
-import 'package:attentive_aid/Utilities/data_theme.dart';
+import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
+import 'package:attentive_aid/Utilities/ui_consts/icons_const.dart';
+import 'package:attentive_aid/Utilities/ui_consts/them_data.dart';
 import 'package:attentive_aid/Widgets/global_widgets/app_logo_txt.dart';
-import 'package:attentive_aid/Widgets/global_widgets/sized_box.dart';
+import 'package:attentive_aid/Widgets/global_widgets/add_height.dart';
 import 'package:attentive_aid/Widgets/sign_in_widgets/login_button.dart';
 import 'package:attentive_aid/Widgets/sign_in_widgets/text_field_main.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ class _LoginPageState extends State<LoginPage> {
         debugShowCheckedModeBanner: false,
         theme: appTheme,
         home: Scaffold(
+          extendBodyBehindAppBar: true,
           resizeToAvoidBottomInset: true,
           body: SingleChildScrollView(
             child: SafeArea(
@@ -91,7 +93,8 @@ class _LoginPageState extends State<LoginPage> {
                     const LoginButton(),
                     Addheight(height: 193.h),
                     Text('Designed for SNSCT',
-                        style: appTheme.textTheme.displayMedium)
+                        style: appTheme.textTheme.displayMedium
+                            ?.copyWith(fontSize: 12, color: tdLightBlack))
                   ],
                 ),
               ),

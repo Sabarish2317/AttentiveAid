@@ -1,6 +1,6 @@
 import 'package:attentive_aid/Screens/dashboard_home.dart';
-import 'package:attentive_aid/Utilities/Colors/colors.dart';
-import 'package:attentive_aid/Utilities/data_theme.dart';
+import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
+import 'package:attentive_aid/Utilities/ui_consts/them_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

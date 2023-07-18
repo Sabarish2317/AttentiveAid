@@ -55,23 +55,24 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-        - asset: lib/Utilities/Fonts/Inter-Bold.ttf
+        - asset: lib/Assets/Fonts/Inter-Bold.ttf
 
-        - asset: lib/Utilities/Fonts/Inter-Medium.ttf
+        - asset: lib/Assets/Fonts/Inter-Medium.ttf
 
-        - asset: lib/Utilities/Fonts/Inter-Regular.ttf
+        - asset: lib/Assets/Fonts/Inter-Regular.ttf
 
-        - asset: lib/Utilities/Fonts/Inter-SemiBOld.ttf
+        - asset: lib/Assets/Fonts/Inter-SemiBOld.ttf
           style: normal
 
     - family: Montserrat
       fonts:
-        - asset: lib/Utilities/Fonts/Montserrat-SemiBold.ttf
-        - asset: lib/Utilities/Fonts/Montserrat-Regular.ttf
-        - asset: lib/Utilities/Fonts/Montserrat-Light.ttf
+        - asset: lib/Assets/Fonts/Montserrat-SemiBold.ttf
+        - asset: lib/Assets/Fonts/Montserrat-Medium.ttf
+        - asset: lib/Assets/Fonts/Montserrat-Regular.ttf
+        - asset: lib/Assets/Fonts/Montserrat-Light.ttf
           style: normal
 
     - family: Lato
       fonts:
-        - asset: lib/Utilities/Fonts/Lato-Bold.ttf
-        - asset: lib/Utilities/Fonts/Lato-Regular.ttf
+        - asset: lib/Assets/Fonts/Lato-Bold.ttf
+        - asset: lib/Assets/Fonts/Lato-Regular.ttf

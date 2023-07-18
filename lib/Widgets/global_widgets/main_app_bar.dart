@@ -1,9 +1,9 @@
-import 'package:attentive_aid/Utilities/Colors/colors.dart';
+import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Widgets/global_widgets/app_logo_txt.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../Utilities/icons.dart';
+import '../../Utilities/ui_consts/icons_const.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -27,8 +27,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             begin: Alignment(1.00, -0.00),
             end: Alignment(-1, 0),
             colors: [
-              Color.fromRGBO(188, 140, 245, 0.15),
-              Color.fromRGBO(251, 130, 196, 0.15)
+              Color.fromRGBO(251, 130, 196, 0.2),
+              Color.fromRGBO(150, 114, 248, 0.2)
             ],
           )),
         ),

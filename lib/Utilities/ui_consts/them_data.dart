@@ -1,4 +1,4 @@
-import 'package:attentive_aid/Utilities/Colors/colors.dart';
+import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -6,7 +6,7 @@ ThemeData appTheme = ThemeData(
   scaffoldBackgroundColor: tdBgColor,
   /*Text themes*/ textTheme: TextTheme(
     titleLarge: TextStyle(
-        fontSize: 12.sp,
+        fontSize: 32.sp,
         fontFamily: 'inter',
         color: tdTlColor,
         letterSpacing: 0.16,
