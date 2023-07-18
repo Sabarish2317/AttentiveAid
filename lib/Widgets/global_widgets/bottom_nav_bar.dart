@@ -2,9 +2,14 @@ import 'package:attentive_aid/Utilities/ui_consts/icons_const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class MyNavVBVBar extends StatelessWidget {
+class MyNavVBVBar extends StatefulWidget {
   const MyNavVBVBar({super.key});
 
+  @override
+  State<MyNavVBVBar> createState() => _MyNavVBVBarState();
+}
+
+class _MyNavVBVBarState extends State<MyNavVBVBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,25 +38,65 @@ class MyNavVBVBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(
-            navHomeout,
-            height: 24.h,
-            width: 24.w,
+          IconButton(
+            splashRadius: 25,
+            onPressed: () {
+              setState(
+                () {
+                  isOnOff = !isOnOff;
+                },
+              );
+            },
+            icon: Image.asset(
+              navHomeout,
+              height: 24.h,
+              width: 24.w,
+            ),
           ),
-          Image.asset(
-            navLeaveOUt,
-            height: 24.h,
-            width: 24.w,
+          IconButton(
+            splashRadius: 25,
+            onPressed: () {
+              setState(
+                () {
+                  isOnOff = !isOnOff;
+                },
+              );
+            },
+            icon: Image.asset(
+              navLeaveOUt,
+              height: 24.h,
+              width: 24.w,
+            ),
           ),
-          Image.asset(
-            navPieOut,
-            height: 24.h,
-            width: 24.w,
+          IconButton(
+            splashRadius: 25,
+            onPressed: () {
+              setState(
+                () {
+                  isOnOff = !isOnOff;
+                },
+              );
+            },
+            icon: Image.asset(
+              navPieOut,
+              height: 24.h,
+              width: 24.w,
+            ),
           ),
-          Image.asset(
-            navProfileOut,
-            height: 24.h,
-            width: 24.w,
+          IconButton(
+            splashRadius: 25,
+            onPressed: () {
+              setState(
+                () {
+                  isOnOff = !isOnOff;
+                },
+              );
+            },
+            icon: Image.asset(
+              navProfileOut,
+              height: 24.h,
+              width: 24.w,
+            ),
           )
         ],
       ),
