@@ -42,9 +42,7 @@ class _MyNavVBVBarState extends State<MyNavVBVBar> {
             splashRadius: 25,
             onPressed: () {
               setState(
-                () {
-                  isOnOff = !isOnOff;
-                },
+                () {},
               );
             },
             icon: Image.asset(
@@ -57,9 +55,7 @@ class _MyNavVBVBarState extends State<MyNavVBVBar> {
             splashRadius: 25,
             onPressed: () {
               setState(
-                () {
-                  isOnOff = !isOnOff;
-                },
+                () {},
               );
             },
             icon: Image.asset(
@@ -72,9 +68,7 @@ class _MyNavVBVBarState extends State<MyNavVBVBar> {
             splashRadius: 25,
             onPressed: () {
               setState(
-                () {
-                  isOnOff = !isOnOff;
-                },
+                () {},
               );
             },
             icon: Image.asset(
@@ -87,9 +81,7 @@ class _MyNavVBVBarState extends State<MyNavVBVBar> {
             splashRadius: 25,
             onPressed: () {
               setState(
-                () {
-                  isOnOff = !isOnOff;
-                },
+                () {},
               );
             },
             icon: Image.asset(

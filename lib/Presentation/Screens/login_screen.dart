@@ -8,7 +8,7 @@ import 'package:attentive_aid/Widgets/sign_in_widgets/text_field_main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../Widgets/global_widgets/check_box.dart';
+import '../../Widgets/global_widgets/check_box.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

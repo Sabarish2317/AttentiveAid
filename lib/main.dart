@@ -1,7 +1,8 @@
-import 'package:attentive_aid/Screens/dashboard_home.dart';
+import 'package:attentive_aid/Presentation/Screens/dashboard_home.dart';
+
 import 'package:flutter/material.dart';
 
-import 'Screens/login_screen.dart';
+import 'Presentation/Screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
