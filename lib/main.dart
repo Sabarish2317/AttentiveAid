@@ -1,8 +1,6 @@
-import 'package:attentive_aid/Presentation/Screens/dashboard_home.dart';
+import 'package:attentive_aid/Presentation/Routes/genetated_routes.dart';
 
 import 'package:flutter/material.dart';
-
-import 'Presentation/Screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,12 +19,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AttentiveAid',
-      home: const LoginPage(),
-      initialRoute: '/',
-      routes: {
-        '/login': (context) => const LoginPage(),
-        '/home': (context) => const DashboardHome(),
-      },
+      onGenerateRoute: RouteGenerator().generatedRoute,
     );
   }
 }

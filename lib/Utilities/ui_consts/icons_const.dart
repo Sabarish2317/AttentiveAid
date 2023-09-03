@@ -19,3 +19,4 @@ const navHome = 'lib/Assets/Icons/home-on 1.png';
 const navLeave = 'lib/Assets/Icons/leaveon.png';
 const navPie = 'lib/Assets/Icons/charton.png';
 const navProfile = 'lib/Assets/Icons/profon.png';
+const downArrow = 'lib/Assets/Icons/dropdown-Arrow.png';

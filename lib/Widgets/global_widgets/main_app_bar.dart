@@ -1,16 +1,17 @@
 import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Widgets/global_widgets/app_logo_txt.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../Utilities/ui_consts/icons_const.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
   final bool notificationBadge;
 
-  const CustomAppBar({
+  const MyAppBar({
     Key? key,
     required this.notificationBadge,
   })  : preferredSize = const Size.fromHeight(50.0),
@@ -19,6 +20,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          // Status bar color
+          statusBarColor: Color.fromARGB(7, 150, 114, 248),
+        ),
         backgroundColor: tdBgColor,
         elevation: 0,
         flexibleSpace: Container(

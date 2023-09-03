@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData appTheme = ThemeData(
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      elevation: 10,
+      backgroundColor: tdgray,
+      type: BottomNavigationBarType.fixed,
+      showSelectedLabels: false,
+      showUnselectedLabels: false),
   scaffoldBackgroundColor: tdBgColor,
   /*Text themes*/ textTheme: TextTheme(
     titleLarge: TextStyle(

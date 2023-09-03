@@ -5,9 +5,11 @@ part 'landing_page_event.dart';
 part 'landing_page_state.dart';
 
 class LandingPageBloc extends Bloc<LandingPageEvent, LandingPageState> {
-  LandingPageBloc() : super(LandingPageInitial()) {
+  LandingPageBloc() : super(LandingPageInitial(tabindex: 0)) {
     on<LandingPageEvent>((event, emit) {
-      // TODO: implement event handler
+      if (event is Tabchange) {
+        emit(LandingPageInitial(tabindex: event.tabindex));
+      }
     });
   }
 }

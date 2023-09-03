@@ -1,4 +1,4 @@
-import 'package:attentive_aid/Presentation/Screens/dashboard_home.dart';
+import 'package:attentive_aid/Presentation/Screens/landing_page._main.dart';
 import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Utilities/ui_consts/them_data.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class _LoginButtonState extends State<LoginButton> {
     return InkWell(
       onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const DashboardHome()),
+        MaterialPageRoute(builder: (context) => const LandingPage()),
       ),
       child: Container(
         width: 289.w,

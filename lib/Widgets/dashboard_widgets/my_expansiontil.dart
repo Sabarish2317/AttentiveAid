@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../Utilities/ui_consts/them_data.dart';
 
-class MyExpTile extends StatelessWidget {
+class MyExpTile extends StatefulWidget {
   final String titleText;
   final String subtitleText;
   final String descriptiveText;
@@ -17,7 +17,13 @@ class MyExpTile extends StatelessWidget {
   });
 
   @override
+  State<MyExpTile> createState() => _MyExpTileState();
+}
+
+class _MyExpTileState extends State<MyExpTile> {
+  @override
   Widget build(BuildContext context) {
+    var selected = 0;
     return ListView.builder(
         physics: const BouncingScrollPhysics(),
         itemCount: 5,
@@ -44,6 +50,7 @@ class MyExpTile extends StatelessWidget {
                   horizontalTitleGap: 13,
                   minLeadingWidth: 0,
                   child: ExpansionTile(
+                    initiallyExpanded: index == selected,
                     collapsedBackgroundColor:
                         const Color.fromARGB(0, 142, 140, 245),
                     collapsedIconColor: tdTlColor,
@@ -58,14 +65,14 @@ class MyExpTile extends StatelessWidget {
                     title: Padding(
                       padding: const EdgeInsets.only(bottom: 4),
                       child: Text(
-                        titleText,
+                        widget.titleText,
                         style: appTheme.textTheme.bodyMedium?.copyWith(
                             color: const Color.fromARGB(255, 30, 27, 57),
                             fontWeight: FontWeight.w600),
                       ),
                     ),
                     subtitle: Text(
-                      subtitleText,
+                      widget.subtitleText,
                       style: appTheme.textTheme.labelLarge?.copyWith(
                           color: const Color.fromRGBO(0, 17, 28, 0.8),
                           fontSize: 16.sp),
@@ -88,7 +95,7 @@ class MyExpTile extends StatelessWidget {
                           Padding(
                             padding:
                                 EdgeInsets.fromLTRB(16.w, 10.h, 16.w, 14.h),
-                            child: Text(descriptiveText),
+                            child: Text(widget.descriptiveText),
                           )
                         ],
                       )

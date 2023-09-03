@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const Color tdgray = Color(0xffF5F6F7);
 const Color tdBgColor = Color(0xffECF2FF);
 const Color tdTlColor = Color(0xff012970);
 const Color tdTxtBlk = Color(0xFF00111C);
