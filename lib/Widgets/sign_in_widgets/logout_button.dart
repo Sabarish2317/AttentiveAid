@@ -1,22 +1,22 @@
-import 'package:attentive_aid/Presentation/LandingPage/landing_page_main.dart';
+import 'package:attentive_aid/Presentation/Screens/login_screen_page.dart';
 import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Utilities/ui_consts/them_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginButton extends StatefulWidget {
-  const LoginButton({super.key});
+class LogOutButton extends StatefulWidget {
+  const LogOutButton({super.key});
 
   @override
-  State<LoginButton> createState() => _LoginButtonState();
+  State<LogOutButton> createState() => _LoginButtonState();
 }
 
-class _LoginButtonState extends State<LoginButton> {
-  Future<Future<Object?>> _login(BuildContext context) async {
+class _LoginButtonState extends State<LogOutButton> {
+  Future<Future<Object?>> _logout(BuildContext context) async {
     return Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
-        builder: (context) => const LandingPage(),
+        builder: (context) => const LoginPage(),
       ),
       (route) => false,
     );
@@ -25,10 +25,10 @@ class _LoginButtonState extends State<LoginButton> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => _login(context),
+      onTap: () => _logout(context),
       child: Container(
-        width: 289.w,
-        height: 44.h,
+        width: 113.w,
+        height: 37.h,
         decoration: ShapeDecoration(
           color: tdPurePurple,
           shape: RoundedRectangleBorder(
@@ -50,9 +50,9 @@ class _LoginButtonState extends State<LoginButton> {
         child: Align(
           alignment: Alignment.center,
           child: Text(
-            'LOGIN',
+            'LOGOUT',
             textAlign: TextAlign.center,
-            style: appTheme.textTheme.displayLarge,
+            style: appTheme.textTheme.displayLarge?.copyWith(fontSize: 12.sp),
           ),
         ),
       ),

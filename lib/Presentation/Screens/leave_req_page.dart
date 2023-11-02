@@ -5,6 +5,6 @@ class LeaveReqPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('leavveeee');
+    return const Text('leavveeee');
   }
 }

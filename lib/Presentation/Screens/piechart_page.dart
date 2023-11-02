@@ -1,12 +1,13 @@
 import 'package:attentive_aid/Data/Widget_data_variables/global_student_data.dart';
 import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Widgets/global_widgets/add_height.dart';
-import 'package:attentive_aid/Widgets/piechart_widgets/piechart_container.dart';
-import 'package:attentive_aid/Widgets/piechart_widgets/semester_button.dart';
+import 'package:attentive_aid/Widgets/piechart_page_widgets/indiv_attend.dart';
+import 'package:attentive_aid/Widgets/piechart_page_widgets/piechart_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../Utilities/ui_consts/them_data.dart';
+import '../../Widgets/piechart_page_widgets/semester_button.dart';
 
 class PieChartPage extends StatelessWidget {
   const PieChartPage({super.key});
@@ -32,7 +33,9 @@ class PieChartPage extends StatelessWidget {
         Addheight(
           height: 14.h,
         ),
-        /*piechart container*/ const PiecChartContainer()
+        /*piechart container*/ const PiecChartContainer(),
+        Addheight(height: 21.h),
+        const IndivAttend()
       ],
     );
   }

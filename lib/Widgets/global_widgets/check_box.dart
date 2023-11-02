@@ -11,7 +11,8 @@ class MyCheckBox extends StatefulWidget {
 }
 
 class _MyCheckBoxState extends State<MyCheckBox> {
-  late bool throwShotAway = widget.throwShotAway;
+  var throwShotAway = true;
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -25,11 +26,10 @@ class _MyCheckBoxState extends State<MyCheckBox> {
                 width: 25,
                 height: 18,
                 child: Checkbox(
-                  value: widget.throwShotAway,
+                  value: throwShotAway,
                   onChanged: (bool? newValue) {
                     setState(() {
                       throwShotAway = newValue!;
-                      throwShotAway = newValue;
                     });
                   },
                 ),

@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../Utilities/ui_consts/icons_const.dart';
+import '../bottomup_widgets/bottomUpMenu/bottom_up_menu.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -43,11 +44,36 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Image.asset(
-                  burgerMenu,
-                  height: 20.h,
-                  width: 20.h,
-                ),
+                GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                        backgroundColor: Colors.transparent,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (context) {
+                          return const Wrap(children: [MyBottomUpMenu()]);
+                          //the widgets inside for the bottom sheet is strored in widgets>bottom_upwidgets.
+                        },
+                      );
+                    },
+                    onDoubleTap: () {
+                      showModalBottomSheet(
+                        backgroundColor: Colors.transparent,
+                        isScrollControlled: true,
+                        context: context,
+                        builder: (context) {
+                          return const Wrap(children: [MyBottomUpMenu()]);
+                          //the widgets inside for the bottom sheet is strored in widgets>bottom_upwidgets.
+                        },
+                      );
+                    },
+                    child: InkWell(
+                      child: Image.asset(
+                        burgerMenu,
+                        height: 24.h,
+                        width: 24.w,
+                      ),
+                    )),
                 MyAppLogo(size: 24.sp),
                 Stack(children: <Widget>[
                   SizedBox(
@@ -59,7 +85,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
                   ),
                   Positioned(
                     top: 0,
-                    right: 2,
+                    right: 2.w,
                     child: SizedBox(
                       height: 9.2.h,
                       width: 9.2.h,

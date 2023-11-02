@@ -20,3 +20,6 @@ const navLeave = 'lib/Assets/Icons/leaveon.png';
 const navPie = 'lib/Assets/Icons/charton.png';
 const navProfile = 'lib/Assets/Icons/profon.png';
 const downArrow = 'lib/Assets/Icons/dropdown-Arrow.png';
+const linechart = 'lib/Assets/Icons/LINE-CHART.png';
+const fakepfp = 'lib/Assets/Icons/fakepfp.png';
+const pdf = 'lib/Assets/Icons/pdf.png';

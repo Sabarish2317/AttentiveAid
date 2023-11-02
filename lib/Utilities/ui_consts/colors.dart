@@ -10,3 +10,4 @@ const Color tdGreen = Color(0xFF50B40D);
 const Color tdOrange = Color(0xFFED7824);
 const Color tdRed = Color(0xFFF23030);
 const Color tdLightBlack = Color(0xFF6B6B6B);
+const Color tdgrayblue = Color(0xFF615E83);

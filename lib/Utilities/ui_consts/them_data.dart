@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData appTheme = ThemeData(
+  //text and bnb theme
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       elevation: 10,
       backgroundColor: tdgray,

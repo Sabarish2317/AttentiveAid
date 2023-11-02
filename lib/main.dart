@@ -1,5 +1,5 @@
-import 'package:attentive_aid/Presentation/Routes/genetated_routes.dart';
-
+import 'package:attentive_aid/Presentation/Screens/login_screen_page.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,10 +16,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AttentiveAid',
-      onGenerateRoute: RouteGenerator().generatedRoute,
+      home: LoginPage(),
     );
   }
 }

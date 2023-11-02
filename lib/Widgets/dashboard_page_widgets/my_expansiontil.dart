@@ -34,7 +34,7 @@ class _MyExpTileState extends State<MyExpTile> {
             child: Container(
                 width: 350.92.w,
                 decoration: ShapeDecoration(
-                  color: const Color(0x198D8CF5),
+                  color: const Color.fromARGB(255, 247, 245, 250),
                   shape: RoundedRectangleBorder(
                     side: const BorderSide(
                       width: 0.50,

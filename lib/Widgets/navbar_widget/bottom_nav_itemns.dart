@@ -6,8 +6,9 @@ import 'package:attentive_aid/Presentation/Screens/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../Presentation/Screens/dashboard_home.dart';
+import '../../Presentation/Screens/dashboard_home_page.dart';
 import '../../Utilities/ui_consts/icons_const.dart';
+import '../bottomup_widgets/bottomUpAccount/bottomsheet_accounts.dart';
 
 List<BottomNavigationBarItem> bottomNavItems = <BottomNavigationBarItem>[
 //List of items visually at bottom nav bar
@@ -47,17 +48,9 @@ List<BottomNavigationBarItem> bottomNavItems = <BottomNavigationBarItem>[
         width: 24.w,
       ),
       label: 'Login'),
-  BottomNavigationBarItem(
-      activeIcon: Image.asset(
-        navProfile,
-        height: 24.h,
-        width: 24.w,
-      ),
-      icon: Image.asset(
-        navProfileOut,
-        height: 24.h,
-        width: 24.w,
-      ),
+  const BottomNavigationBarItem(
+      activeIcon: MyAccount(myicon: navProfile),
+      icon: MyAccount(myicon: navProfileOut),
       label: 'Login'),
 ];
 
@@ -65,9 +58,9 @@ List<BottomNavigationBarItem> bottomNavItems = <BottomNavigationBarItem>[
 //Other pages are considered as stWidgets and are rendered inside this common scaffold
 
 //StWidgts which are child screens
-const List<Widget> bottomNavScreen = <Widget>[
-  DashboardHome(),
-  LeaveReqPage(),
-  PieChartPage(),
-  ProfilePage(),
+final pageOptions = [
+  const DashboardHome(),
+  const LeaveReqPage(),
+  const PieChartPage(),
+  const ProfilePage(),
 ];

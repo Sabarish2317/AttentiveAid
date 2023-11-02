@@ -2,16 +2,16 @@
 
 import 'package:attentive_aid/Utilities/ui_consts/colors.dart';
 import 'package:attentive_aid/Utilities/ui_consts/icons_const.dart';
-import 'package:attentive_aid/Widgets/dashboard_widgets/dashboard_card.dart';
+import 'package:attentive_aid/Widgets/dashboard_page_widgets/dashboard_card.dart';
 import 'package:attentive_aid/Widgets/global_widgets/gradient_stack.dart';
 import 'package:attentive_aid/Widgets/global_widgets/add_height.dart';
-import 'package:attentive_aid/Widgets/dashboard_widgets/my_expansiontil.dart';
+import 'package:attentive_aid/Widgets/dashboard_page_widgets/my_expansiontil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../Data/Widget_data_variables/global_student_data.dart';
 import '../../Utilities/ui_consts/them_data.dart';
-import '../../Widgets/global_widgets/bottom_nav_bar.dart';
+
 import '../../Widgets/global_widgets/main_app_bar.dart';
 
 class DashboardHome extends StatefulWidget {
