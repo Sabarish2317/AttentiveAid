@@ -1,6 +1,4 @@
 import 'package:attentive_aid/Presentation/LandingPage/reusable_scaffold.dart';
-
-import 'package:attentive_aid/Widgets/sheets/sheets_grid_container.dart';
 import 'package:attentive_aid/Widgets/sheets/sheets_semester_button.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +9,7 @@ import '../../Utilities/ui_consts/colors.dart';
 import '../../Utilities/ui_consts/them_data.dart';
 import '../../Widgets/global_widgets/add_height.dart';
 
+import '../../Widgets/sheets/sheets_grid_container.dart';
 import '../../Widgets/sheets/sheets_header_container.dart';
 
 class OverallSheets extends StatelessWidget {
@@ -62,7 +61,7 @@ class OverallSheets extends StatelessWidget {
                       padding: EdgeInsets.all(15.0),
                       child: OverallSheetsHeader(),
                     ),
-                    MyDataGrid()
+                    MySfDataGrid()
                   ]),
                 )
               ],
